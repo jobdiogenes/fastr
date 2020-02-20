@@ -101,4 +101,4 @@ docker load -i mythesis.tar
 ```
 
 #### Any questions, want help ***?***
-> Use github issue to contact-me
+> Use github issues to contact-me
