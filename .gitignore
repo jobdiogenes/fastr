@@ -37,3 +37,12 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Local docs
+*.txt
+
+# Testing TAGS
+/alpine
+/colab
+/source
+/azul
