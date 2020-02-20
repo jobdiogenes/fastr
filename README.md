@@ -3,16 +3,16 @@
 >Docker Images for [FastR](https://github.com/oracle/fastr) using [GraalVM](https://www.graalvm.org) CE Community Edition
 
 ## Why use docker
->Using Docker images is a great way to develop quality and reprodutible research. Use docker images, to run Gnu-R, FastR, Python, or any mix of tools. Even Gui application, lige QGis, could run under docker with a few adjusts. 
->>Some advantages of this aproach are:
+>Using Docker images is a great way to develop quality and reproducible research analysis. Use docker images, to run Gnu-R, FastR, Python, or any mix of tools. Even Gui application, like QGis, could run under docker with a few adjusts. 
+>>Some advantages of this approach are:
 
-+ You could create a well defined ennvironment to your research task. Where the tools and packages are in their respective versions that are need to run. No more need to uninstall and install tools and packages in your computer. All this tools will be containerized under docker and isolated of your system. 
++ You could create a well defined environment to your research task. Where the tools and packages are in their respective versions that are need to run. No more need to uninstall and install tools and packages in your computer. All this tools will be containerized under docker and isolated of your system. 
 
 + Containers could be shared, moved and accessed remotely.
 
 + Publish a paper, working in a group **?** just publish your docker to others use.
 
-+ Need more power? For example, you develop a research that is too slow to your computer, just move you docker image to some Cloud Provider, or other Supercomputer/Cluster that you have access. You will dont need to prepare, or ask to IT prepare the enviroment to run.
++ Need more power? For example, you develop a research that is too slow to your computer, just move you docker image to some Cloud Provider, or other Supercomputer/Cluster that you have access. You will don't need to prepare, or ask to IT prepare the environment to run.
 
 ## Why FastR is so fast
 
@@ -29,11 +29,11 @@ Unlike **R** and other interpreted languages an AST interpreter like GraalVM lea
 
 + FastR its not viable for short run scripts, since loading are more slow than standard Gnu-R and will not benefited from optimizations
 + FastR are under early development, so you need takes more care about installing R packages. 
-> Get more informations about compatibility, parameters, etc in [GraalVM Reference Manual for R](https://www.graalvm.org/docs/reference-manual/languages/r/) 
+> Get more information's about compatibility, parameters, etc in [GraalVM Reference Manual for R](https://www.graalvm.org/docs/reference-manual/languages/r/) 
 
 ## How to use this FastR Docker
 
-+ First you need to have docker engine installed in your computer. Under Debian, Ubuntu, LinuxMint or other debian base system, is already on base repositories. But, you could use Docker.com repositories to get the newest version.
++ First you need to have docker engine installed in your computer. Under Debian, Ubuntu, LinuxMint or other Debian base system, is already on base repositories. But, you could use Docker.com repositories to get the newest version.
 + If you want really deploy FastR for your needs or research group in your own computer or server. Its highly recommended to configure where docker engine will store contents. Do this changing "graph" parameter in daemon.json that in ubuntu/debian is at /etc/docker/daemon, to a directory mapped to outside of system partition. 
 
 ## Using this docker image
@@ -81,8 +81,8 @@ R
 Rscript /mnt/install-packages.R
 
 ## You could even copy data to the container.
-# Rememeber this could make your docker image bigger. But, its great
-# for easy reproductibility.
+# Remember this could make your docker image bigger. But, its great
+# for easy reproducibility.
 mkdir /data
 cp  /mnt/data/* /data
 ```
@@ -101,4 +101,4 @@ docker load -i mythesis.tar
 ```
 
 #### Any questions, want help ***?***
-> Use github issues to contact-me
+> Use github issue to contact-me
