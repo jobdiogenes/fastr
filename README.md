@@ -1,6 +1,17 @@
 # FastR Docker
 
->Docker Images for [FastR](https://github.com/oracle/fastr) using [GraalVM](https://www.graalvm.org) CE Community Edition
+>Docker Images for [FastR](https://github.com/oracle/fastr) using [GraalVM](https://www.graalvm.org) CE Community Edition.
+
+To use the latest stable version use:
+```sh
+docker pull jobdiogenes/fastr
+```
+To use the latest developer version use:
+```sh
+docker pull jobdiogenes/fastr:dev
+```
+
+**Note:** All these images include custumized R packages developed by graal/fastr team.
 
 ## Why use docker
 >Using Docker images is a great way to develop quality and reproducible research analysis. Use docker images, to run Gnu-R, FastR, Python, or any mix of tools. Even Gui application, like QGis, could run under docker with a few adjusts. 
